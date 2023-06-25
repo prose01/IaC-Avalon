@@ -40,6 +40,6 @@ jobs:
         scriptLocation: 'inlineScript'
         inlineScript: |
           az deployment sub create \
-            --location northeurope \
+            --location westeurope \
             --template-file $(Build.sourcesdirectory)/IaC/Avalon.bicep \
             --parameters $(Build.sourcesdirectory)/IaC/parameters.${{variables.stageName}}.json \
